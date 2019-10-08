@@ -1,7 +1,7 @@
 # docker-fastdfs-nginx-lua
 
 ```
-docker run -d -p 80:80 -p 22122:22122 \
+docker run -d --net=host --restart=always \
     --name=fastdfs\
     -e TZ=Asia/Shanghai \
     -e HOST_IP=10.3.78.164 \
