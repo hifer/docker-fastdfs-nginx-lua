@@ -8,3 +8,5 @@ docker run -d --net=host --restart=always \
     -v /data/fastdfs:/data/fastdfs \
     fastdfs:2.0
 ```
+
+ps:HOST_IP默认取eth0网卡，如网卡非eth0,请添加-e HOST_IP=x.x.x.x配置
