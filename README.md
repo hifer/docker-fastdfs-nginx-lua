@@ -1,6 +1,12 @@
 # docker-fastdfs-nginx-lua
 
 ```
+git clone https://github.com/hifer/docker-fastdfs-nginx-lua.git
+cd docker-fastdfs-nginx-lua
+docker build -t fastdfs:2.0 .
+```
+
+```
 docker run -d --net=host --restart=always \
     --name=fastdfs\
     -e TZ=Asia/Shanghai \
